@@ -6,14 +6,14 @@ import CountShower from './CountShower';
 
 const Banner = () => {
     return (
-        <div className='w-full bg-blue-200'>
-            <div className='md:flex items-center m-auto justify-center '>
+        <div className='w-full bg-blue-100 m-auto'>
+            <div className='md:flex items-center m-auto justify-center gap-5'>
 
-                <div>
-                    <h2>Explore a world of learning</h2>
-                    <p>unlock your potential with top universities </p><br />
+                <div className=''>
+                    <h2 className='text-3xl text-gray-700'>Explore a world of learning</h2>
+                    <p >unlock your potential with top universities </p>
                     <p>worldwide</p>
-                    <button className='border rounded bg-blue-600 p-3'>create an account <FaArrowRight /></button>
+                    <button className='border rounded flex items-center justify-center gap-3 bg-blue-600 p-3'>create an account <FaArrowRight /></button>
                 </div>
                 <div>
                     <img src={image2} alt="" />
