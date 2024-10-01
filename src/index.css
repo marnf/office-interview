@@ -2,3 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes moveRight {
+    0% {
+      transform: translateX(-800px);
+    }
+    100% {
+      transform: translateX(0); 
+    }
+  }
+
+@keyframes moveLeft {
+    0% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(0); 
+    }
+  }
+
+  @keyframes moveDown {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
+  
+
+  .animate-move-right {
+    animation: moveRight 2s forwards;
+  }
+  .animate-move-left{
+    animation: moveLeft 2s forwards;
+  }
+
+  .animate-move-down {
+    animation: moveDown 2s forwards;
+  }
